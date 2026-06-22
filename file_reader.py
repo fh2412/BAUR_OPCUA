@@ -1,3 +1,4 @@
+import logging
 import os
 import re
 import shutil
@@ -105,5 +106,5 @@ def check_and_process_file():
         shutil.move(str(target_file), str(destination_path))
         return parsed_data
     except Exception as e:
-        print(f"Critical: Failed to move file to fileshare: {e}")
-        return None
+        logging.error(f"Network fileshare unreachable. Holding file locally: {e}")
+        return None # Returning None ensures OPC UA variables don't update with data that hasn't been backed up yet
