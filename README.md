@@ -1,4 +1,4 @@
-```markdown
+
 # BAUR OPC UA File Bridge
 
 An industrial data bridge that monitors local testing machine text logs (e.g., from a BAUR breakdown tester), parses the measurement data, handles local/network file rotation, and exposes the data via an asynchronous OPC UA server interface.
@@ -16,7 +16,7 @@ The application is structured using a **Separation of Concerns (SoC)** model to 
 
 ## Directory Layout
 
-```text
+
 BAUR_OPCUA/
 │
 ├── .venv/                   # Python Virtual Environment
@@ -26,7 +26,7 @@ BAUR_OPCUA/
 ├── main.py                  # Core runtime loop (Application Entry Point)
 └── requirements.txt         # Cached environment dependencies
 
-```
+
 
 ---
 
@@ -36,7 +36,7 @@ BAUR_OPCUA/
 
 All variables are mapped under custom string Node IDs using namespace index `2` (`ns=2`) for persistent, reliable client mapping:
 
-```text
+
 Root
 └── Objects
     └── BreakdownTester [Object]
