@@ -1,7 +1,3 @@
-Here is a complete, clean, and production-ready `README.md` layout for your project. You can copy and paste this directly into your project folder. It reflects the modular file structure, configuration steps, and industrial environment considerations we established.
-
----
-
 ```markdown
 # BAUR OPC UA File Bridge
 
