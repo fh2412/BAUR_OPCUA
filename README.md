@@ -16,7 +16,7 @@ The application is structured using a **Separation of Concerns (SoC)** model to 
 
 ## Directory Layout
 
-
+```text
 BAUR_OPCUA/
 │
 ├── .venv/                   # Python Virtual Environment
@@ -25,7 +25,7 @@ BAUR_OPCUA/
 ├── opcua_server.py          # OPC UA Server definition & node layouts
 ├── main.py                  # Core runtime loop (Application Entry Point)
 └── requirements.txt         # Cached environment dependencies
-
+```
 
 
 ---
@@ -36,7 +36,7 @@ BAUR_OPCUA/
 
 All variables are mapped under custom string Node IDs using namespace index `2` (`ns=2`) for persistent, reliable client mapping:
 
-
+```text
 Root
 └── Objects
     └── BreakdownTester [Object]
