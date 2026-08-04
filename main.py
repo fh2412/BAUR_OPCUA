@@ -18,7 +18,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        RotatingFileHandler(r"C:\ProgramData\BAUR_OPCUA\logs\bridge.log", maxBytes=1024*1024*5, backupCount=3),
+        RotatingFileHandler(config.LOGS_DIR, maxBytes=1024*1024*5, backupCount=3),
         logging.StreamHandler() # Keeps terminal output active during manual runs
     ]
 )
