@@ -18,7 +18,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        RotatingFileHandler(r"C:\ProgramData\BAUR_OPCUA\logs\bridge.log", maxBytes=1024*1024*5, backupCount=3),
+        RotatingFileHandler(config.LOGS_DIR, maxBytes=1024*1024*5, backupCount=3),
         logging.StreamHandler() # Keeps terminal output active during manual runs
     ]
 )
@@ -45,7 +45,7 @@ async def main():
             
             if new_data:
                 logging.info(f"[{datetime.now().strftime('%H:%M:%S')}] New Log Found!")
-                logging.info(f" -> Sample ID: {new_data['sample_number']}")
+                logging.info(f" -> Sample ID: {new_data['sample_number']} {new_data['sample_number']}")
                 logging.info(f" -> Avg Breakdown Voltage: {new_data['average_kv']} kV")
                 
                 # Update our live server variables
