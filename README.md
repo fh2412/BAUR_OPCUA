@@ -69,7 +69,7 @@ Root
 ### Prerequisite Setup (Local Server/PC)
 
 1. **Verify Python Installation**: Ensure Python 3.11 or 3.12 is installed on the host machine.
-2. Connect PC to Fileshare
+2. Connect PC to Fileshare or change the Paths in the config.py file
 3. **Create Paths**: Verify the following target directories exist or that the execution account has full permissions to create them:
 * **Source Ingestion Folder**: `C:\Users\Öldurchschlag\Desktop\BAUR_Messergebnisse\textfile`
 * **Network Fileshare Destination**: `\\atlnzotfs01\Data\MF - Maschinen\MF DR – Drying\1009_OT_Messgeräte\Berichte`
