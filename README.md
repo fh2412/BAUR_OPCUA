@@ -69,10 +69,11 @@ Root
 ### Prerequisite Setup (Local Server/PC)
 
 1. **Verify Python Installation**: Ensure Python 3.11 or 3.12 is installed on the host machine.
-2. **Create Paths**: Verify the following target directories exist or that the execution account has full permissions to create them:
-* **Source Ingestion Folder**: `C:\FactoryData\FolderA`
-* **Network Fileshare Destination**: `\\Fileshare\FactoryBackup\FolderB`
-* **Application Logs**: `C:\ProgramData\BAUR_OPCUA\logs\`
+2. Connect PC to Fileshare
+3. **Create Paths**: Verify the following target directories exist or that the execution account has full permissions to create them:
+* **Source Ingestion Folder**: `C:\Users\Öldurchschlag\Desktop\BAUR_Messergebnisse\textfile`
+* **Network Fileshare Destination**: `\\atlnzotfs01\Data\MF - Maschinen\MF DR – Drying\1009_OT_Messgeräte\Berichte`
+* **Application Logs**: `\\atlnzotfs01\Data\MF - Maschinen\MF DR – Drying\1009_OT_Messgeräte\Logs\baur_opcua.log`
 
 
 
